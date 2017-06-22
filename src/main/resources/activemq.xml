@@ -18,11 +18,11 @@
         http://activemq.apache.org/schema/core/activemq-core-5.12.1.xsd"
         >
     
-    <context:component-scan base-package="com.gzframe.demo.activemq" />
+    <context:component-scan base-package="com.ztf.activemq" />
     <mvc:annotation-driven />
         
     <amq:connectionFactory id="amqConnectionFactory" 
-        brokerURL="tcp://192.168.150.61:61616" 
+        brokerURL="tcp://192.168.187.128:61616" 
         userName="admin" 
         password="admin" />
     
@@ -37,7 +37,7 @@
     <bean id="demoQueueDestination" class="org.apache.activemq.command.ActiveMQQueue">
         <!-- 设置消息队列的名字 -->
         <constructor-arg>
-            <value>gzframe.demo</value>
+            <value>ztf.demo</value>
         </constructor-arg>
     </bean>
     
