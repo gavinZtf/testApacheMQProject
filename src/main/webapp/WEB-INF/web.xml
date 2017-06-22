@@ -3,7 +3,7 @@
    <display-name>Archetype Created Web Application</display-name>
   
   <!-- 加载spring的配置文件，例如hibernate、jms等集成 -->
-  <!-- <context-param>  
+  <context-param>  
       <param-name>contextConfigLocation</param-name>  
       <param-value>
           classpath:spring-root.xml;
@@ -13,9 +13,9 @@
   
   <listener>
       <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-  </listener> -->
+  </listener>
   
-  <!-- <servlet>
+   <servlet>
         <servlet-name>springMVC</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
@@ -27,7 +27,7 @@
     <servlet-mapping>
         <servlet-name>springMVC</servlet-name>
         <url-pattern>/</url-pattern>
-    </servlet-mapping> -->
+    </servlet-mapping>
     
     <!-- 处理编码格式 -->
     <filter>  
